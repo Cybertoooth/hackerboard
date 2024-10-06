@@ -90,7 +90,7 @@ padding-bottom: 25px;
 
 
 
-/* Home */
+/* Join */
 
 #registration {
 margin: 3% auto 0 auto;
@@ -100,10 +100,11 @@ height: 450px;
 border: 1px solid #000;
 }
 
-#registration h3{
+#registration h3 {
 font: normal 900 1.8em "Albert Sans", sans-serif;
 margin-bottom: 25px;
 text-align: left;
+text-transform: uppercase;
 }
 
 #registration form {
@@ -152,7 +153,6 @@ clear: both;
 margin: 30px 0 0 0;
 cursor: pointer;
 }
-
 
 
 /* Rankings */
@@ -281,6 +281,59 @@ font-weight: 700;
 }
 */
 
+/* Avatar */
+
+#avatar {
+margin: 3% auto 0 auto;
+width: 1000px;
+height: 500px;
+border: 1px solid #000;
+}
+
+#avatar h3 {
+font: normal 900 1.8em "Albert Sans", sans-serif;
+margin: 40px 0 0 0;
+text-transform: uppercase;
+}
+
+#avatar p {
+font: normal 600 0.9em "Albert Sans", sans-serif;
+text-transform: uppercase;
+color: #000;
+margin-bottom: 10px;
+}
+
+#avatar-container {
+margin: 0 25px;
+width: 95%;
+}
+
+.row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 100%;
+}
+
+#avatar-container img {
+cursor: pointer;
+width: 94px;
+height: 94px;
+}
+
+#avatar-container button {
+float: right;
+margin: 20px 10px 0 0;
+font: normal 600 0.9em "Albert Sans", sans-serif;
+border: 1px solid #000;
+border-radius: 15px;
+background: #fff;
+color: #000;
+width: 15%;
+height: 50px;
+cursor: pointer;
+clear: both;
+}
 
 
 
