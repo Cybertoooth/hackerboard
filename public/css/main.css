@@ -1,0 +1,361 @@
+
+
+* {
+padding: 0;
+margin: 0;
+}
+
+html {
+box-sizing: border-box;
+}
+
+body {
+background: #F1f0ec;
+}
+
+header {
+width: 100%;
+margin: 0 auto;
+border-bottom: 1px solid #000;
+}
+
+nav {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+height: 50px;
+}
+
+nav menu li  {
+list-style-type: none;
+font: normal 600 0.9em "Albert Sans", sans-serif;
+text-transform: uppercase;
+}
+
+nav menu:last-child {
+display: flex;
+flex-direction: row;
+}
+
+nav menu:last-child li {
+padding-right: 15px;
+}
+
+nav menu:last-child li:nth-child(1) {
+font-size: 1.2em;
+text-decoration: underline;
+}
+
+nav menu:first-of-type li  {
+background: rgba(205,205,205,0.5);
+}
+
+nav menu li div  {
+display: inline-block;
+background: rgba(0,0,0,0.5);
+width: 4px;
+height: 11px;
+margin-right: 2px;
+animation: blinkingCursor 2s infinite;
+}
+
+nav menu li a {
+color: #000;
+text-decoration: none;
+list-style-type: none;
+}
+
+nav menu:first-of-type li a {
+color: #000;
+}
+
+.logo {
+white-space: pre;
+font-family: monospace;
+font-weight: 900;
+text-align: center;
+margin: 0 auto;
+padding-bottom: 25px;
+}
+
+.container {
+ width: 85%;
+ height: auto;
+ margin: 1% auto 0 auto;
+ padding-top: 5px;
+ overflow-x: hidden;
+ border-top: 1px solid #000;
+}
+
+
+
+/* Home */
+
+#registration {
+margin: 3% auto 0 auto;
+padding: 50px 5px 15px 5px;
+width: 20%;
+height: 450px;
+border: 1px solid #000;
+}
+
+#registration h3{
+font: normal 900 1.8em "Albert Sans", sans-serif;
+margin-bottom: 25px;
+text-align: left;
+}
+
+#registration form {
+width: 75%;
+padding: 10px;
+margin: 0 auto;
+}
+
+#registration label {
+font: normal 600 0.9em "Albert Sans", sans-serif;
+text-transform: uppercase;
+color: #000;
+}
+
+#registration select {
+background: #fff;
+width: 100%;
+height: 30px;
+border: 1px solid #000;
+padding: 5px;
+margin: 10px 0;
+}
+
+#registration input::placeholder {
+color: #000;
+}
+
+#registration input {
+width: 100%;
+height: 35px;
+margin: 10px 0;
+border: 1px solid #000;
+outline: transparent;
+}
+
+#registration #button {
+font: normal 600 0.9em "Albert Sans", sans-serif;
+border: 1px solid #000;
+border-radius: 15px;
+background: #fff;
+color: #000;
+width: 45%;
+height: 50px;
+float: right;
+clear: both;
+margin: 30px 0 0 0;
+cursor: pointer;
+}
+
+
+
+/* Rankings */
+
+#scrolling-container {
+width: 100%;
+height: 150px;
+margin: 0 auto;
+padding-top: 15px;
+}
+
+#scrolling-container span {
+background: rgba(205,205,205,0.5);
+font: normal 600 0.9em "Albert Sans", sans-serif;
+text-transform: uppercase;
+}
+
+#scrolling-items {
+display: flex;
+flex-direction: row;
+justify-content: center;
+transform: translateX(-100%);
+width: 85%;
+height: 150px;
+animation: scrollingAnimation 15s linear infinite;
+padding-top: 15px;
+}
+
+.profile {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin-right: 75px;
+}
+
+.profile img {
+border-radius: 50%;
+margin-right: 5px;
+}
+
+.profile h3 {
+display: block;
+line-height: 0.9em;
+padding: 0;
+margin: 0;
+font: normal 200 2.5em "Albert Sans", sans-serif;
+}
+
+.profile div span {
+display: block;
+margin: 10px auto 0 auto;
+text-align: center;
+text-transform: uppercase;
+font: normal 900 1em "Albert Sans", sans-serif;
+}
+
+.ranking {
+padding: 5px 15px;
+}
+
+#rankings {
+margin-top: 75px;
+}
+
+#rankings h3 {
+font: normal 600 3em "Albert Sans", sans-serif;
+text-transform: uppercase;
+}
+
+#feed-header {
+display: flex;
+flex-direction: row;
+justify-content: left;
+text-transform: uppercase;
+font: normal 500 1em "Albert Sans", sans-serif;
+border-bottom: 1px solid #000;
+padding: 25px 0 10px 0;
+border-bottom: 1px solid #000;
+}
+
+#feed-header div {
+width: 20%;
+}
+
+.feed {
+display: flex;
+flex-direction: column;
+width: 99.9%;
+}
+
+.feed-item {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+border-bottom: 1px solid #000;
+width: 100%;
+text-align: right;
+}
+
+.feed-item img {
+border-radius: 50%;
+width: 24px;
+height: 24px;
+display: inline-block;
+margin-right: 15px;
+}
+
+.feed-item div {
+display: flex;
+align-items:  center;
+width: 100%;
+margin: 15px 0;
+font: normal 500 1.2em "Albert Sans", sans-serif;
+}
+
+.feed-item div:nth-child(2) {
+font-weight: 700;
+}
+
+/*
+.feed-item:nth-child(-n+3) {
+
+
+}
+*/
+
+
+
+
+
+.profile div {
+margin-left: 10px;
+}
+
+.profile div p {
+text-transform: uppercase;
+font: normal 400 1em "Albert Sans", sans-serif;
+margin-top: 5px;
+}
+
+.profile div p:first-child {
+font-weight: 900;
+}
+
+
+@keyframes scrollingAnimation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes blinkingCursor {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+}
+
+
+@media(min-width: 1850px){
+    .logo {
+      font-size: 2em;
+    }
+}
+
+@media(max-width: 1800px){
+    .logo {
+      font-size: 1.2em;
+    }
+}
+
+@media(max-width: 1200px){
+    .logo {
+      font-size: 1em;
+    }
+
+    .container {
+      width: 100%;
+    }
+}
+
+@media(max-width: 1000px){
+    .logo {
+      font-size: 0.9em;
+    }
+}
+
+@media(max-width: 800px){
+    .logo {
+      font-size: 0.6em;
+    }
+}
+
+@media(max-width: 640px){
+    .logo {
+      font-size: 0.3em;
+    }
+}
