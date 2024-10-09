@@ -31,16 +31,16 @@ class HackerboardApp < Sinatra::Base
     erb :avatar
   end
 
-  get '/challenges/:id' do
-    erb :challenges
-  end
-
  get '/challenge/:id/solved' do
    erb :solved
  end
 
  get '/challenge/:id' do
    erb :challenge
+ end
+
+ get '/challenges' do
+    erb :challenges
  end
 
 

@@ -1,3 +1,4 @@
 /data
 /public/images
 .env
+config/database.yml
